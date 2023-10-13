@@ -11,7 +11,7 @@ const Update = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`https://full-stack-app-vert-eight.vercel.app/update/${id}`)
+    axios.get(https://full-stack-backend-jet.vercel.app/update/${id}`)
       .then(result => {
        
         setName(result.data.name)
@@ -24,7 +24,7 @@ const Update = () => {
 
   const UpdateOperation = (event) => {
     event.preventDefault();
-    axios.put(`https://full-stack-app-vert-eight.vercel.app/updateUser/${id}`,
+    axios.put(`https://full-stack-backend-jet.vercel.app/updateUser/${id}`,
       {
         name, email, password,
       })
