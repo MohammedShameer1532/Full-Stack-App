@@ -12,7 +12,11 @@ async function main() {
     console.log("db connected");   
 }
 
-server.use(cors());
+server.use(cors({
+    origin:[""],
+    methods:["POST","GET"],
+    credentials:true
+}));
 server.use(bodyparser.json());
 server.use(express.json());
 
