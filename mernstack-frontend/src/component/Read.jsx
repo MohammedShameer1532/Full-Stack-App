@@ -7,13 +7,13 @@ const Read = () => {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    axios.get('https://full-stack-app-vert-eight.vercel.app/read')
+    axios.get('https://full-stack-backend-jet.vercel.app/read')
       .then(result => setUser(result.data))
       .catch(err => console.log(err))
   }, [])
 
   const handleDelete = (id) => {
-    axios.delete(`https://full-stack-app-vert-eight.vercel.app/deleteUser/${id}`)
+    axios.delete(`https://full-stack-backend-jet.vercel.app/deleteUser/${id}`)
       .then(result => {
         console.log(result)
         window.location.reload()
