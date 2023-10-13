@@ -11,7 +11,7 @@ const Update = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(https://full-stack-backend-jet.vercel.app/update/${id}`)
+    axios.get(`https://full-stack-backend-jet.vercel.app/update/${id}`)
       .then(result => {
        
         setName(result.data.name)
