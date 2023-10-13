@@ -13,7 +13,7 @@ async function main() {
 }
 
 server.use(cors({
-    origin:[""],
+    origin:["https://full-stack-frontend-six.vercel.app/"],
     methods:["POST","GET"],
     credentials:true
 }));
