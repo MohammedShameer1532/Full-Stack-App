@@ -11,7 +11,7 @@ const Create = () => {
   const headers = { "Access-control-Allow-Origin": "*" };
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('https://full-stack-backend-jet.vercel.app/create',
+    axios.post('https://backend-eight-black.vercel.app/create',
       {
         name, email, password,
         headers
